@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator DuckAgent</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/avatars/1121696422526464073/bb3fb84b9cfa2a467a7d193a5f23f098.png?size=4096">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+            <button class="btn" onclick="appendNumber('7')">7</button>
+            <button class="btn" onclick="appendNumber('8')">8</button>
+            <button class="btn" onclick="appendNumber('9')">9</button>
+            <button class="btn operator" onclick="chooseOperation('/')">÷</button>
+            <button class="btn" onclick="appendNumber('4')">4</button>
+            <button class="btn" onclick="appendNumber('5')">5</button>
+            <button class="btn" onclick="appendNumber('6')">6</button>
+            <button class="btn operator" onclick="chooseOperation('*')">×</button>
+            <button class="btn" onclick="appendNumber('1')">1</button>
+            <button class="btn" onclick="appendNumber('2')">2</button>
+            <button class="btn" onclick="appendNumber('3')">3</button>
+            <button class="btn operator" onclick="chooseOperation('-')">-</button>
+            <button class="btn" onclick="appendNumber('0')">0</button>
+            <button class="btn" onclick="appendNumber('.')">.</button>
+            <button class="btn" onclick="clearDisplay()">C</button>
+            <button class="btn operator" onclick="chooseOperation('+')">+</button>
+            <button class="btn equals" onclick="compute()">=</button>
+            <button id="Back"> Back</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

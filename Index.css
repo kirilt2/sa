@@ -1,0 +1,145 @@
+/* Resetting default margin and padding */
+body, button, h1, p, img, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    opacity: 1;
+}
+#About {
+    margin-top: 20px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color for better contrast */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-info {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-info img {
+    width: 100px; /* Adjust the width of the image as needed */
+    border-radius: 50%; /* Make the image round */
+}
+
+.language-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#Lan {
+    margin-bottom: 10px; /* Adjust as needed */
+    
+}
+
+.language-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust as needed */
+}
+
+.language-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white; /* Text color */
+    transition: background-color 0.3s ease;
+}
+
+/* Specific styles for English button */
+#englishButton {
+    background-color: #007bff; /* Blue */
+}
+
+#englishButton:hover {
+    background-color: #45a049; /* Darker blue */
+}
+
+/* Specific styles for Russian button */
+#russianButton {
+    background-color: #ff5733; /* Orange-red */
+}
+
+#russianButton:hover {
+    background-color: #45a049; /* Darker red */
+}
+
+#user-welcome-container {
+    padding: 10px 20px;
+    font-size: 26px;
+    border: none;
+    border-radius: 4px;
+    color: white; /* Text color */
+    transition: background-color 0.3s ease;
+
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container + .button-container {
+    margin-top: 50px;
+}
+
+button {
+    background-color: #006bb3;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for smooth effect */
+    margin-top: 10px; /* Add some spacing between buttons */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+button:active {
+    transform: translateY(2px); /* Add a slight vertical movement when button is clicked */
+}
+
+.additional-button {
+    background-color: #007bff;
+}
+
+.additional-button:hover {
+    background-color: #0056b3;
+}
+
+.button-no {
+    background-color: red;
+}

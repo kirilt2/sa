@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background: #1e2127;
+}
+#Back {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#Back:hover {
+    background-color: #0056b3;
+}
+
+
+.display {
+    grid-column: span 4;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    font-size: 2.5em;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 10px;
+}
+
+.btn {
+    background: #444;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px #333;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:active {
+    box-shadow: 0 2px #333;
+    transform: translateY(2px);
+}
+
+.btn.operator {
+    background: #f39c12;
+}
+
+.btn.equals {
+    grid-column: span 2;
+    background: #27ae60;
+    color: white;
+}
+
+.btn.clear {
+    grid-column: span 2;
+    background: #c0392b;
+    color: white;
+}
